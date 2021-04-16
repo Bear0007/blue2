@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flender</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script>
+                window.onload = window.onresize = function(){
+                    var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+                    var _html = document.getElementsByTagName('html')[0];
+                    view_width>828?_html.style.fontSize = 828 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+                }
+    </script>
+</head>
+<body>
+    <div class="box">
+        <div class="bg">
+            <img src="img/index_background.png" alt="">
+        </div>
+        <div class="bg2">
+            <div class="form">
+                <form action="" methood=''>
+                    <ul>
+                        <li>
+                            <label for="name">姓名</label><input type="text" id="name">
+                            <span id="pd1"> &nbsp;*姓名不能为空</span>
+                        </li>
+                        <li><label for="name_id">员工号</label><input type="text" id="name_id" value="">
+                            <span id="pd1"> &nbsp;*员工号不能为空</span></li>
+                        <li><label for="mali" value="">邮箱</label><input type="text" id="mali">
+                            <span> &nbsp;*邮箱填写有误</span></li>
+                        <li><label for="firm" value="" >公司</label><input type="text" id="firm">
+                            <span> &nbsp;*公司不能为空</span></li>
+                       <input type="submit" value="提交" id="submit">
+                    </ul>
+                </form>
+            </div>  
+        </div>
+    </div>
+    <script src="libs/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
